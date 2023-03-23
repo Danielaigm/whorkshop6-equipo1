@@ -121,6 +121,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  animation: backInLeft;
+  animation-duration: 1s;
 }
 
 .cheese {
@@ -150,6 +152,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  animation: backInLeft;
+  animation-duration: 1s;
 }
 
 .control-panel {
