@@ -1,5 +1,6 @@
 import React from "react";
 import Ingredient from "../Ingredient/Ingredient";
+import 'animate.css';
 
 const Burger = (props) => {
     const burgerIngredients = props.ingredients.map((ingredient, index) => (
