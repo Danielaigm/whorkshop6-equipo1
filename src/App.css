@@ -1,4 +1,4 @@
-.main > div {
+.main>div {
   text-align: center;
   display: flex;
   flex-flow: column;
@@ -11,6 +11,11 @@
   width: 40%;
   height: 400px;
   margin: auto;
+  position: absolute;
+  top: 350px;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .bread-bottom {
@@ -139,32 +144,7 @@
   margin-top: 20px;
 }
 
-.button {
-  height: 0.5em;
-  color: #494949 !important;
-  text-transform: uppercase;
-  background: #ffffff;
-  padding: 10px;
-  border: 3px solid #494949 !important;
-  border-radius: 6px;
-  display: inline-block;
-  font-size: 1em;
-  line-height: 0.5em;
-  margin: 20px;
-}
 
-.button:hover {
-  color: #ffffff !important;
-  background: #f6b93b;
-  border-color: #f6b93b !important;
-  transition: all 0.1s ease 0s;
-  cursor: pointer;
-}
-
-.reset-button:hover {
-  background: red !important;
-  border-color: red !important;
-}
 
 .container {
   text-align: center;

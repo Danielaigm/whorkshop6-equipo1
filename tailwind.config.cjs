@@ -11,7 +11,11 @@ module.exports = {
             queso: "url(src/assets/queso.png)",
             tocino: "url(src/assets/tocino.png)",
         },
-        extend: {},
+        extend: {
+            fontFamily: {
+                Delicious: ["Delicious, cursive"],
+            },
+        },
     },
     plugins: [],
 };
