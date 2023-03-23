@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import Swal from "sweetalert2";
 import { Notify } from "../../services/toastify";
+import { motion } from "framer-motion";
 
 // Actions
 const confirmBurger = (price) => ({
@@ -76,13 +77,13 @@ class Builder extends Component {
       text: "De querer realizar este pedido",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
+      confirmButtonColor: "#FFC312",
       cancelButtonColor: "#d33",
       confirmButtonText: "Si, Tengo hambrita",
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire(
-          "Deleted!",
+          "Que la disfrutes!",
           "Su hamburguesa a sido creada exitosamente",
           "success"
         );
@@ -94,29 +95,31 @@ class Builder extends Component {
 
   render() {
     return (
-      <div className="container">
-        <ControlPanel
-          onAdd={(x) => {
-            this.addIngredient(x);
-          }}
-        />
-        <h3># Burgers added: {this.props.burgersArray.length}</h3>
-        <h2>
-          Burger {this.props.burgersArray.length + 1} : $ {this.getPrice()}
-        </h2>
-        <div className="button" onClick={() => this.handleConfirm()}>
-          Confirm
-        </div>
-        <Link to="/receipt">
-          <div className="button">See receipt</div>
-        </Link>
-        <div className="builder">
-          <Burger
-            ingredients={this.state.ingredients}
-            onIngredientClick={(index) => this.removeIngredient(index)}
+      <motion.div>
+        <div className="container">
+          <ControlPanel
+            onAdd={(x) => {
+              this.addIngredient(x);
+            }}
           />
+          <h3># Burgers added: {this.props.burgersArray.length}</h3>
+          <h2>
+            Burger {this.props.burgersArray.length + 1} : $ {this.getPrice()}
+          </h2>
+          <div className="button" onClick={() => this.handleConfirm()}>
+            Confirm
+          </div>
+          <Link to="/receipt">
+            <div className="button">See receipt</div>
+          </Link>
+          <div className="builder">
+            <Burger
+              ingredients={this.state.ingredients}
+              onIngredientClick={(index) => this.removeIngredient(index)}
+            />
+          </div>
         </div>
-      </div>
+      </motion.div>
     );
   }
 }
