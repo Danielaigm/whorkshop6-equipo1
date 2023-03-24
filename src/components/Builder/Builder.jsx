@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import Swal from "sweetalert2";
 import { Notify } from "../../services/toastify";
 import { AiOutlineCheck } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 // Actions
 const confirmBurger = (price) => ({
@@ -176,7 +177,9 @@ class Builder extends Component {
             </>
         );
     }
-}
+  };
+
+
 
 const mapStateToProps = (state) => ({
     burgersArray: state,
