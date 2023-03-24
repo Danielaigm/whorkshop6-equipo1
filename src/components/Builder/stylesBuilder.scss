@@ -1,0 +1,18 @@
+.secNavigationButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.secBurger {
+}
+@media (min-width: 768px) {
+  .secNavigationButtons {
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .secNavigationButtons {
+    flex-direction: row;
+  }
+}
