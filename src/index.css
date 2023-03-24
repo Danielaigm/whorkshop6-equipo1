@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 body {
   font-family: "Fira Sans", sans-serif;
 }
@@ -12,7 +13,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #a855f7;
+  background-color: #e85d04;
   border-radius: 10px;
 }
 body::-webkit-scrollbar-track {
