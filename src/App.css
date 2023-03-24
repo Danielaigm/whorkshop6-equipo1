@@ -105,19 +105,39 @@
 }
 
 .cheese {
+  background-image: url(./assets/queso.png);
+  margin: 2%;
+  width: 70%;
+  height: 54%;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center center;
+  animation:backInLeft;
+  animation-duration: 1%;
+
+/*   
   width: 90%;
   height: 4.5%;
   margin: 2% auto;
   background: linear-gradient(#f4d004, #d6bb22);
-  border-radius: 20px;
+  border-radius: 20px; */
 }
 
 .salad {
-  width: 85%;
+  /* width: 85%;
   height: 7%;
   margin: 2% auto;
   background: linear-gradient(#228c1d, #91ce50);
-  border-radius: 20px;
+  border-radius: 20px; */
+background-image: url(./assets/lechuga.png);
+margin: 2%;
+  width: 70%;
+  height: 54%;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center center;
+  animation:backInLeft;
+  animation-duration: 1%;
 }
 
 .bacon {
