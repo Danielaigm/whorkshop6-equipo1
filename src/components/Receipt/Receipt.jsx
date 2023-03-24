@@ -45,7 +45,7 @@ const Receipt = (props) => {
         </h1>
         <article>
           <Link to="/">
-            <div className="btnBack">Return to builder</div>
+            <div className="btnBack ">Return to builder</div>
           </Link>
           <div className="btnReset" onClick={props.reset}>
             Reset
